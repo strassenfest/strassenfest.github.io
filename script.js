@@ -16,7 +16,7 @@ var data = [
         id: `a-vingergroep`,
         nederlands: {
             titel: `Ga in de VINGERGROEP`,
-            beschrijving: `Dat is de <em>Pinky signal-groep</em> waar je als het goed is al in zit :)`,
+            beschrijving: `Dat is "Utrecht Pinky - 27 mei", waar je als het goed is al in zit. Want hoe komt je anders op deze pagina terecht? :)`,
             toelichting: `Bij grote acties wordt er soms gewerkt met 'vingers': dat zijn groepen die samen voorbereiden en naar de actielocatie lopen. Dit vergroot de veiligheid en de kans dat zo veel mogelijk rebellen op de actie aankomen.`,
         },
         engels: {
