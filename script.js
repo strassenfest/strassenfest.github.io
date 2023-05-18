@@ -314,19 +314,22 @@ function get_cookie(cname) {
 
 function template_actiepunt(id, titel, beschrijving, toelichting)
 {
-    return `<div class="actiepunt" id=${id}>
-        <div class="box">
-        <p class="titel titelfont">${titel}</p>
-        <p class="beschrijving">${beschrijving}</p>
-        <div class="check">
-            <input class="checkbox" type="checkbox" id="${id}" onchange="save_to_cookies(); update()">
-            <label class="titelfont" for="${id}">Check</label>
-        </div>
-        </div>
-        <div class="inklapbaar">
-        <div class="box toevoeging">
-            <p class="toelichting">${toelichting}</p>
-        </div>
+    return `
+    <div class="center">
+        <div class="actiepunt" id=${id}>
+            <div class="box">
+            <p class="titel titelfont">${titel}</p>
+            <p class="beschrijving">${beschrijving}</p>
+            <div class="check">
+                <input class="checkbox" type="checkbox" id="${id}" onchange="save_to_cookies(); update()">
+                <label class="titelfont" for="${id}">Check</label>
+            </div>
+            </div>
+            <div class="inklapbaar">
+            <div class="box toevoeging">
+                <p class="toelichting">${toelichting}</p>
+            </div>
+            </div>
         </div>
     </div>`
 }
@@ -336,7 +339,9 @@ function template_actiepunt(id, titel, beschrijving, toelichting)
 function template_pijl()
 {
     return `
-        <img class="pijl" src="img/arrow_down_thin_120.png">`
+    <div class="center">
+        <img class="pijl" src="img/arrow_down_thin_120.png">
+    </div>`
 }
 
 
