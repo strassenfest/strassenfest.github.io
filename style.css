@@ -24,6 +24,38 @@ html, body, p {
     padding-right: 0.5rem;
 }
 
+.welkom {
+    width: 11.4rem;
+    height: 7.8rem;
+}
+
+.vlag {
+    width: inherit; height: inherit;
+    background-size: contain;
+    position: absolute;
+}
+
+.vlag-1 {
+    background-image: url("img/flag_1.png");
+    animation: rotate-1 1s infinite;
+}
+
+.vlag-2 {
+    background-image: url("img/flag_2.png");
+    animation: rotate-2 1s infinite;
+}
+
+@keyframes rotate-1 {
+    0% { transform: rotate(-2deg) }
+    50% { transform: rotate(2deg) }
+    100% { transform: rotate(-2deg) }
+}
+@keyframes rotate-2 {
+    0% { transform: rotate(2deg) }
+    50% { transform: rotate(-2deg) }
+    100% { transform: rotate(2deg) }
+}
+
 .inklapbaar {
     overflow: hidden;
     transition-property: max-height;
