@@ -1,0 +1,186 @@
+html, body, p {
+    margin: 0; padding: 0;
+}
+
+.voorkeuren {
+    display: none;
+
+    padding: 0.5rem;
+
+    
+    /*margin-bottom: 0.5rem;*/
+    
+    background-color: thistle;
+
+    border-bottom: 0.2rem solid black;
+
+    font-size: 2rem;
+    /*font-weight: bold;*/
+}
+
+.voorkeuren select {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.inklapbaar {
+    overflow: hidden;
+    transition-property: max-height;
+    transition-duration: 0.2s;
+    
+    max-height: 10rem;
+
+    transition-delay: 0.5s;
+}
+
+.hidden .inklapbaar {
+    max-height: 0rem;
+    transition-delay: 0s;
+}
+
+.box {
+    width: 20rem;
+
+    border: 0.2rem solid black;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    margin-top: 1rem;
+
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
+    background-color: white;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), white);
+}
+
+.box.toevoeging {
+    margin-top: 0rem;
+    border-top-width: 0rem;
+    background-color: #eeeeee;
+    background-image: none;
+}
+
+.box p {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.check {
+    border-top: 0.2rem dotted black;
+    text-align: center;
+
+    margin-top: 0.75rem;
+    padding-top: 0.25rem;
+    margin-bottom: -0.5rem;
+}
+
+.actiepunt .box
+{
+    transition-property: background-color, color, border-color;
+    transition-duration: 0.15s;
+
+    transition-delay: 0.2s;
+}
+
+.actiepunt.done .box {
+    border-color: black;
+    background-color: #d5fccf;
+    color: black;
+
+    transition-delay: 0s;
+}
+
+.actiepunt.hidden .box {
+    border-color: gray;
+    background-color: lightgray;
+    color: gray;
+
+    transition-delay: 0s;
+}
+
+/* never change the toevoeging-box */
+.actiepunt.hidden .box.toevoeging, .actiepunt.done .box.toevoeging {
+    border-color: black;
+    background-color: #eeeeee;
+    color: black;
+}
+
+.titel {
+    text-align: center;
+}
+
+.titelfont {
+    /*font-weight: bold;*/
+    font-size: 2rem;
+    font-family: fucxedcaps;
+    text-transform: uppercase;
+}
+
+.beschrijving {
+    font-size: 1.2rem;
+}
+
+.toelichting{
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.checkbox {
+    width: 2rem;
+    height: 2rem;
+}
+
+.pijl {
+    width: 5rem;
+    margin-left: -2.5rem; /* half width */
+    padding-left: 11rem; /* half box width plus 0.5rem margin */
+
+    margin-bottom: -1.3rem;;
+}
+
+#opties {
+    text-align: right;
+}
+
+.reset {
+    margin: 1rem;
+}
+
+.hidden a:link, .hidden a:visited, .hidden a:hover, .hidden a:active {
+    color: gray;
+}
+
+@font-face {
+    font-family: fucxedcaps;
+    src: url("FUCXEDCAPS.otf") format("opentype");
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: Verdana, sans-serif;
+}
+
+/*
+.keuze {
+    margin-top: 0.5rem;
+    padding-top: 0.25rem;
+    border-top: 0.1rem dotted black;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+}
+
+.ja {
+    flex-grow: 1;
+    text-align: center;
+    border-right: 0.1rem dotted black;
+}
+
+.nee {
+    flex-grow: 1;
+    text-align: center;
+}
+*/
