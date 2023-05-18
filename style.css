@@ -72,7 +72,7 @@ html, body, p {
 }
 
 .box {
-    width: 20rem;
+    /*width: 20rem;*/
 
     border: 0.2rem solid black;
 
@@ -188,6 +188,14 @@ html, body, p {
 @font-face {
     font-family: fucxedcaps;
     src: url("FUCXEDCAPS.otf") format("opentype");
+}
+#container {
+    width: 22rem;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {

@@ -29,27 +29,29 @@
         <option value="engels">English</option>
       </select> 
     </div>
-    <div class="welkom">
-      <div class="vlag vlag-1"></div>
-      <div class="vlag vlag-2"></div>
-    </div>
-    <div id="actiepunten">
-      <div class="actiepunt" id="a-error">
-        <div class="box">
-          <p class="titel titelfont">Zet JAVASCRIPT aan</p>
-          <p class="beschrijving">Deze pagina werkt niet zonder javascript.</p>
-          <div class="check">
-            <input class="checkbox" type="checkbox" id="a-error-check" onchange="save_to_cookies(); update();">
-            <label class="titelfont" for="a-error-check">Check</label>
-          </div>
-        </div>
-        <div class="inklapbaar">
-          <div class="box toevoeging">
-              <p class="toelichting">Misschien staat javascript uit in je browser, of wordt javascript geblokkeerd door een plugin.</p>
-          </div>
-        </div>
+    <div id="container" class="center">
+      <div class="welkom center">
+        <div class="vlag vlag-1"></div>
+        <div class="vlag vlag-2"></div>
       </div>
-      <img class="pijl" src="img/arrow_down_thin_120.png">
+      <div id="actiepunten" class="center">
+        <div class="actiepunt" id="a-error">
+          <div class="box">
+            <p class="titel titelfont">Zet JAVASCRIPT aan</p>
+            <p class="beschrijving">Deze pagina werkt niet zonder javascript.</p>
+            <div class="check">
+              <input class="checkbox" type="checkbox" id="a-error-check" onchange="save_to_cookies(); update();">
+              <label class="titelfont" for="a-error-check">Check</label>
+            </div>
+          </div>
+          <div class="inklapbaar">
+            <div class="box toevoeging">
+                <p class="toelichting">Misschien staat javascript uit in je browser, of wordt javascript geblokkeerd door een plugin.</p>
+            </div>
+          </div>
+        </div>
+        <img class="pijl" src="img/arrow_down_thin_120.png">
+      </div>
     </div>
 
     <!--button class="reset" type="button" onclick="save_to_cookies()">

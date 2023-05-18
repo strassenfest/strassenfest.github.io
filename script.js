@@ -172,20 +172,20 @@ var data = [
 
 function start()
 {
-    let container = document.getElementById("actiepunten");
+    let actiepunten = document.getElementById("actiepunten");
 
-    container.innerHTML = ""; // bye
+    actiepunten.innerHTML = ""; // bye
 
     let n = data.length;
 
     for (let i = 0; i < n; i++)
     {
         var html = template_actiepunt(data[i].id, data[i].nederlands.titel, data[i].nederlands.beschrijving, data[i].nederlands.toelichting);
-        container.insertAdjacentHTML("beforeend", html);
+        actiepunten.insertAdjacentHTML("beforeend", html);
 
         if (i != n-1)
         {
-            container.insertAdjacentHTML("beforeend", template_pijl());
+            actiepunten.insertAdjacentHTML("beforeend", template_pijl());
         }
     }
 }
