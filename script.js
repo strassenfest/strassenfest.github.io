@@ -4,7 +4,7 @@ var data = [
         nederlands: {
             titel: `Ga in de ALGEMENE BROADCAST`,
             beschrijving: `Dat is <a href="https://t.me/+-1BG92MkKMk2ODc0">dit telegramkanaal</a> met de titel "Stop Sub #12".`,
-            toelichting: `Voor de veel acties, en ook voor deze <span class="a-12">A12-actie</span>, is er een grote <em>signal of telegram-groep</em> waar belangrijke mededelingen worden gepost.`,
+            toelichting: `Voor veel acties, en ook voor deze <span class="a-12">A12-actie</span>, is er een grote <em>signal of telegram-groep</em> waar belangrijke mededelingen worden gepost.`,
         },
         engels: {
             titel: `Join the GENERAL BROADCAST`,
@@ -68,7 +68,7 @@ var data = [
         id: `a-anonimiteit`,
         nederlands: {
             titel: `Bepaal: ANONIEM of niet?`,
-            beschrijving: `Er zijn diverse voor- en nadelen dus laat je vooral goed informeren.`,
+            beschrijving: `Er zijn diverse voor- en nadelen dus laat je vooral goed informeren. <a href="https://cloud.extinctionrebellion.nl/index.php/s/rCEXNxeaTrXQfX6">Hier is een document met informatie over anonimiteit</a>`,
             toelichting: `Als je anoniem gaat, neem dan ook geen spullen mee met jou naam er op. Dus ook geen bankpas of OV-chipkaart op naam.`,
         },
         engels: {
@@ -94,7 +94,7 @@ var data = [
         id: `a-vingerbriefing`,
         nederlands: {
             titel: `Volg de VINGERBRIEFING`,
-            beschrijving: `Dinsdag 23 en woensdag 24 mei om 21:30, direct aansluitend aan de <em>algemene briefing</em>, doen wij onze eigen vingerbriefing. Een link volgt op de dag zelf. We doen de meeting twee keer, zodat je kan kiezen welke dag jou het beste uitkomt.`,
+            beschrijving: `In de signal groep van je vinger wordt er gedeeld of er ook nog een aparte vinger briefing zal worden gehouden. Houd de groep in de gaten en doe hieraan mee!`,
             toelichting: `In deze briefing bespreken we het plan voor onze vinger, waaronder de verzamellocatie en aanlooproute. Bovendien is er tijd voor vragen, en kunnen er nog buddies gemaakt worden.`,
         },
         engels: {
@@ -108,6 +108,19 @@ var data = [
         nederlands: {
             titel: `Trek een RST-NUMMER`,
             beschrijving: `Er wordt nog een link gepost waar je een nummer kan trekken. Dat nummer is jouw arrestanten-nummer of RST ("arrestee")-nummer. Doe dit altijd, ook als je low-risk gaat.`,
+            toelichting: `Het RST-nummmer dat je hebt getrokken moet je in dit formulier invullen. Trek maar 1 keer een nummer en onthoud deze goed!`,
+        },
+        engels: {
+            titel: `(translation TODO)`,
+            beschrijving: `(translation TODO)`,
+            toelichting: `(translation TODO)`,
+        }
+    },
+        {
+        id: `a-rst-form`,
+        nederlands: {
+            titel: `Vul het RST formulier in!`,
+            beschrijving: `In de algemene briefing zal er een link worden gedeeld met het arrestanten-formulier! Vul deze zo snel mogelijk in! Deze informatie wordt ook gebruikt om je helpen en te zorgen dat iedereen veilig blijft`,
             toelichting: `Je RST-nummer zorgt er voor dat arrestee-support jou kan traceren. Zo weten ze of er nog rebellen vast zitten. Achter de schermen werkt RST-support er hard aan om iedereen weer vrij te krijgen.`,
         },
         engels: {
@@ -120,7 +133,7 @@ var data = [
         id: `a-tas-inpakken`,
         nederlands: {
             titel: `Pak je tas in`,
-            beschrijving: `Een paklijst wordt gedeeld tijdens de <em>algemene briefing</em>.`,
+            beschrijving: `Een paklijst wordt gedeeld tijdens de <em>algemene briefing</em>. <a href="https://cloud.extinctionrebellion.nl/index.php/s/q7aNEgnGcZyo52Q">Maar hier is een link naar een algemene paklijst.</a> `,
             toelichting: `Denk in elk geval aan: warme kleren, eten, drinken, geld, ID-kaart*, OV-kaart*. Géén dierbare bezittingen. Géén wapens, géén drugs.<br/>* niet als je anoniem gaat`,
         },
         engels: {
