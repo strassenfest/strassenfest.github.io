@@ -237,10 +237,12 @@ function update()
         }
 
         // When we meet an unchecked item, disable visibility for all next items.
-        if (!is_checked)
-        {
-            is_visible = false;
-        }
+
+        // I've disabled this for now, so people can cross things off, non-sequential.
+        // if (!is_checked)
+        // {
+        //     is_visible = false;
+        // }
 
         i++;
     };
