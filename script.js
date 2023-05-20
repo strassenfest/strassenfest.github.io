@@ -25,7 +25,7 @@ var data = [
             toelichting: `Larger actions sometimes use 'fingers'. These are groups that prepare for the action together and move towards the place of action together. This increases security and our chances of succes.`,
         }
     },
-        {
+    {
         id: `a-actieconsensus`,
         nederlands: {
             titel: `Lees de ACTIECONSENSUS`,
@@ -129,7 +129,7 @@ var data = [
             toelichting: `The RST number is used to connect you anonymously to who you are. Only RST support knows who is associated with what number, and will delete this information afterwards. `,
         }
     },
-        {
+    {
         id: `a-rst-form`,
         nederlands: {
             titel: `Vul het RST formulier in!`,
@@ -146,12 +146,12 @@ var data = [
         id: `a-tas-inpakken`,
         nederlands: {
             titel: `Pak je TAS in`,
-            beschrijving: `Een paklijst wordt gedeeld tijdens de <em>algemene briefing</em>. <a href="paklijst NL-EN mei.pdf">Maar hier is een link naar een algemene paklijst.</a> `,
+            beschrijving: `Een paklijst wordt gedeeld tijdens de <em>algemene briefing</em>. <a href="https://strassenfest.github.io/packlist">Hier is een link naar de (straks interactieve) paklijst.</a>`,
             toelichting: `Denk in elk geval aan: warme kleren, eten, drinken, geld, ID-kaart*, OV-kaart*. Géén dierbare bezittingen. Géén wapens, géén drugs.<br/>* niet als je anoniem gaat`,
         },
         engels: {
             titel: `Pack your BAG!`,
-            beschrijving: `A packing list will be shared during the general briefing. <a href="paklijst NL-EN mei.pdf">Here is a link to the general packing list</a>`,
+            beschrijving: `A packing list will be shared during the general briefing. <a href="https://strassenfest.github.io/packlist">Here is a link to the (soon to be interactive) packing list</a>`,
             toelichting: `Make sure you at least have enough warm clothing, food and water to support yourself for the day. Don't take any alcohol, drugs or things that are very precious to you.`,
         }
     },
@@ -196,8 +196,7 @@ var data = [
     },
 ]
 
-function start()
-{
+function start() {
     let actiepunten = document.getElementById("actiepunten");
 
     actiepunten.innerHTML = ""; // bye
@@ -209,32 +208,27 @@ function start()
 
 
     if (value == 'nederlands') {
-        for (let i = 0; i < n; i++)
-        {
+        for (let i = 0; i < n; i++) {
             var html = template_actiepunt(data[i].id, data[i].nederlands.titel, data[i].nederlands.beschrijving, data[i].nederlands.toelichting);
             actiepunten.insertAdjacentHTML("beforeend", html);
 
-            if (i != n-1)
-            {
+            if (i != n - 1) {
                 actiepunten.insertAdjacentHTML("beforeend", template_pijl());
             }
         }
     } else {
-        for (let i = 0; i < n; i++)
-        {
+        for (let i = 0; i < n; i++) {
             var html = template_actiepunt(data[i].id, data[i].engels.titel, data[i].engels.beschrijving, data[i].engels.toelichting);
             actiepunten.insertAdjacentHTML("beforeend", html);
 
-            if (i != n-1)
-            {
+            if (i != n - 1) {
                 actiepunten.insertAdjacentHTML("beforeend", template_pijl());
             }
         }
     }
 }
 
-function update()
-{
+function update() {
     let items = document.getElementsByClassName("actiepunt");
 
     let is_visible = true;
@@ -245,21 +239,17 @@ function update()
         let is_checked = item.querySelector(".checkbox").checked;
 
         // Show or hide the element.
-        if (is_visible)
-        {
+        if (is_visible) {
             item.classList.remove("hidden");
             item.getElementsByClassName("checkbox")[0].disabled = false;
-            if (is_checked)
-            {
+            if (is_checked) {
                 item.classList.add("done");
             }
-            else
-            {
+            else {
                 item.classList.remove("done");
             }
         }
-        else
-        {
+        else {
             item.classList.add("hidden");
             item.getElementsByClassName("checkbox")[0].disabled = true;
 
@@ -278,8 +268,7 @@ function update()
     };
 }
 
-function clear()
-{
+function clear() {
     let items = document.getElementsByClassName("actiepunt");
 
     for (let item of items) {
@@ -288,8 +277,7 @@ function clear()
     }
 }
 
-function reset()
-{
+function reset() {
     clear();
     save_to_cookies();
 
@@ -299,8 +287,7 @@ function reset()
     document.documentElement.scrollTop = 0;
 }
 
-function save_to_cookies()
-{
+function save_to_cookies() {
     let items = document.getElementsByClassName("actiepunt");
 
     for (let item of items) {
@@ -311,8 +298,7 @@ function save_to_cookies()
     }
 }
 
-function load_from_cookies()
-{
+function load_from_cookies() {
     let items = document.getElementsByClassName("actiepunt");
 
     for (let item of items) {
@@ -320,12 +306,10 @@ function load_from_cookies()
 
         let v = get_cookie(checkbox.id);
 
-        if (v == String(true))
-        {
+        if (v == String(true)) {
             checkbox.checked = true;
         }
-        else
-        {
+        else {
             checkbox.checked = false;
         }
     }
@@ -336,8 +320,8 @@ function load_from_cookies()
 function set_cookie(cname, cvalue) {
     let days = 40;
     const d = new Date();
-    d.setTime(d.getTime() + (days*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
+    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
@@ -345,20 +329,19 @@ function get_cookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
     }
     return "";
 }
 
-function template_actiepunt(id, titel, beschrijving, toelichting)
-{
+function template_actiepunt(id, titel, beschrijving, toelichting) {
     return `
         <div class="actiepunt" id=${id}>
             <div class="box">
@@ -379,8 +362,7 @@ function template_actiepunt(id, titel, beschrijving, toelichting)
 
 
 
-function template_pijl()
-{
+function template_pijl() {
     return `
         <img class="pijl" src="img/arrow_down_thin_120.png">`
 }
@@ -390,4 +372,4 @@ window.addEventListener('load', function () {
     start();
     load_from_cookies();
     update();
-  })
+})
