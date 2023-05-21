@@ -81,12 +81,12 @@ var data = [
         id: `a-anonimiteit`,
         nederlands: {
             titel: `Bepaal: ANONIEM of niet?`,
-            beschrijving: `Er zijn diverse voor- en nadelen dus laat je vooral goed informeren. <a href="https://cloud.extinctionrebellion.nl/index.php/s/rCEXNxeaTrXQfX6">Hier is een document met informatie over anonimiteit</a>`,
+            beschrijving: `Er zijn diverse voor- en nadelen dus laat je vooral goed informeren. Voor meer information, vraag je mede rebellen en je vinger coordinator in je vinger.`,
             toelichting: `Als je anoniem gaat, neem dan ook geen spullen mee met jou naam er op. Dus ook geen bankpas of OV-chipkaart op naam.`,
         },
         engels: {
             titel: `Commit: HIGH RISK or LOW RISK`,
-            beschrijving: `There are various pros and cons for anonymity, so inform yourself well. <a href="https://cloud.extinctionrebellion.nl/index.php/s/rCEXNxeaTrXQfX6">There is a document with information here</a>`,
+            beschrijving: `There are various pros and cons for anonymity, so inform yourself well. For more information, ask the other rebels and your finger coordinator in your finger group.`,
             toelichting: `If you go anonymous, don't bring any stuff with your name on it. That also means no banking or OV cards.`,
         }
     },
