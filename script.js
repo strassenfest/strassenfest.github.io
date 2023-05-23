@@ -146,12 +146,12 @@ var data = [
         id: `a-tas-inpakken`,
         nederlands: {
             titel: `Pak je TAS in`,
-            beschrijving: `Een paklijst wordt gedeeld tijdens de <em>algemene briefing</em>. <a href="https://cloud.extinctionrebellion.nl/index.php/s/q7aNEgnGcZyo52Q">Maar hier is een link naar een algemene paklijst.</a> `,
+            beschrijving: `Een paklijst wordt gedeeld tijdens de <em>algemene briefing</em>. <a href="paklijst NL-EN mei.pdf">Maar hier is een link naar een algemene paklijst.</a> `,
             toelichting: `Denk in elk geval aan: warme kleren, eten, drinken, geld, ID-kaart*, OV-kaart*. Géén dierbare bezittingen. Géén wapens, géén drugs.<br/>* niet als je anoniem gaat`,
         },
         engels: {
             titel: `Pack your BAG!`,
-            beschrijving: `A packing list will be shared during the general briefing. <a href="https://cloud.extinctionrebellion.nl/index.php/s/q7aNEgnGcZyo52Q">Here is a link to the general packing list</a>`,
+            beschrijving: `A packing list will be shared during the general briefing. <a href="paklijst NL-EN mei.pdf">Here is a link to the general packing list</a>`,
             toelichting: `Make sure you at least have enough warm clothing, food and water to support yourself for the day. Don't take any alcohol, drugs or things that are very precious to you.`,
         }
     },
