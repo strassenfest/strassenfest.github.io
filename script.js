@@ -29,7 +29,7 @@ var data = [
         id: `a-actieconsensus`,
         nederlands: {
             titel: `Lees de ACTIECONSENSUS`,
-            beschrijving: `Dit is heel belangrijk. Lees de actie consessus zorgvuldig. Als je het ergens niet mee eens ben, GA DAN NIET MEE. <a href="https://cloud.extinctionrebellion.nl/index.php/s/4WWr9DeXaQamSCJ">Je kunt het hier lezen.</a>`,
+            beschrijving: `Dit is heel belangrijk. Lees de actie consensus zorgvuldig. Als je het ergens niet mee eens ben, GA DAN NIET MEE. <a href="https://cloud.extinctionrebellion.nl/index.php/s/4WWr9DeXaQamSCJ">Je kunt het hier lezen.</a>`,
             toelichting: `De actie consensus bevat de basis van alle voorwaarden die we hebben afgesproken als Extinction Rebellion. `,
         },
         engels: {
